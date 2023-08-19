@@ -30,13 +30,13 @@ namespace Exercise
             height = double.Parse(vet[2], CultureInfo.InvariantCulture);
 
             Console.ReadLine();
-            Console.WriteLine(name);
-            Console.WriteLine(rooms);
-            Console.WriteLine(price.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("O seu nome é " + name);
+            Console.WriteLine("Sua casa tem " + rooms + " quarto(s)");
+            Console.WriteLine("O preço da última coisa que comprou foi de R$ " + price.ToString("F2", CultureInfo.InvariantCulture));
           
-            Console.WriteLine(lastName);
-            Console.WriteLine(age);
-            Console.WriteLine(height.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("o Sr(a). " + lastName);
+            Console.WriteLine("tem " + age + " anos de idade");
+            Console.WriteLine("e possui " + height.ToString("F2", CultureInfo.InvariantCulture) + " metros de altura");
 
             Console.ReadLine();
         }
