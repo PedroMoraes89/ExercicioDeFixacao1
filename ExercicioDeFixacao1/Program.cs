@@ -23,11 +23,19 @@ namespace Exercise
 
             lastName = vet[0];
             age = int.Parse(vet[1]);
-            height = double.Parse(vet[2]);
+            height = double.Parse(vet[2], CultureInfo.InvariantCulture);
 
+            Console.ReadLine();
+            Console.WriteLine("Entre com o seu nome completo:");
             Console.WriteLine(name);
+            
+            Console.WriteLine("Quantos quartos tem na sua casa?");
             Console.WriteLine(rooms);
+            
+            Console.WriteLine("Entre com o preço de um produto:");
             Console.WriteLine(price.ToString("F2", CultureInfo.InvariantCulture));
+            
+            Console.WriteLine("Entre com seu último nome, idade e altura");
             Console.WriteLine(lastName);
             Console.WriteLine(age);
             Console.WriteLine(height.ToString("F2", CultureInfo.InvariantCulture));
